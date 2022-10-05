@@ -139,10 +139,28 @@ padding: 1rem;
 .main{
 	margin-top: 50px;
 }
-.main section p{
+.title p{
+	margin: 0 auto;
+	width: 600px;
+	height: 50px;
 	text-align: center;
 	font-family: MicrosoftJhengHeiRegular;
 font-size: 20px;
 color: #3D1101;
 line-height: 32px;
+position: relative;
+}
+.title p::after,.title p::before{
+	position: absolute;
+	width: 150px;
+	height: 1px;
+	background: #979797;
+	content: '';
+	top: 30px;
+}
+.title p::after{
+	left: 0;
+}
+.title p::before{
+	right: 0;
 }
