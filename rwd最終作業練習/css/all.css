@@ -55,12 +55,12 @@ table {
  }
  /* css rest end */
 .wrap{
-	max-width: 1050px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 .header{
 	background-image: url(https://raw.githubusercontent.com/hexschool/course-css-weblayout/main/assets/header_desktop.png);
-	width: 1049px;
+	width: 100%;
 	height: 420px;
 }
 .nav-bar{
@@ -73,7 +73,6 @@ table {
 	display: block;
 	color: white;
 	text-decoration: none;
-	width: 120px;
 	font-family: NotoSansCJKtc-Black;
 font-size: 24px;
 color: #FFFFFF;
@@ -96,4 +95,54 @@ margin:16px 0 16px 40px;
 }
 .nav-bar ul li a:hover{
 	color: aqua;
+}
+.header section{
+	width: 420px;
+	height: 152px;
+	background: rgba(0,0,0,0.35);
+	margin: 50px 294px 50px 295px;
+}
+.header section h2{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 34px;
+color: #FFFFFF;
+text-align: center;
+padding: 1rem;
+}
+.header section p{
+	font-family: MicrosoftJhengHeiRegular;
+    color: #FFFFFF;
+	text-align: center;
+	line-height: 1.5rem;
+	margin-top: 5px;
+}
+@media(max-width:799px){
+	.header{
+		background-image: url(../images/image\ 1.png);
+	   width: 100%;
+	   height: 420px;
+	}
+	.nav-bar{
+		width: 100%;
+	}
+	.nav-bar h1 a{
+		margin:16px 0 16px 0px;
+	}
+	.nav-bar ul li{
+		padding-right: 0;
+	}
+	.header section{
+		margin: 50px 294px 50px 200px;
+	}
+}
+/* header end */
+.main{
+	margin-top: 50px;
+}
+.main section p{
+	text-align: center;
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 20px;
+color: #3D1101;
+line-height: 32px;
 }
