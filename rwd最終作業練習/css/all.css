@@ -54,9 +54,10 @@ table {
      height: auto;
  }
  /* css rest end */
-.wrap{
+ .wrap{
 	max-width: 1024px;
 	margin: 0 auto;
+	background-color: rgb(243, 234, 225);
 }
 .header{
 	background-image: url(https://raw.githubusercontent.com/hexschool/course-css-weblayout/main/assets/header_desktop.png);
@@ -193,7 +194,7 @@ padding: 1.2rem;
   align-items:center;
 }
 .title1{
-	margin-left: 110px;
+	margin-left: 13%;
 	margin-bottom: 10px;
 	  color:#979797;
 	}
@@ -205,39 +206,164 @@ color: #3D1101;
 line-height: 32px;
 }
 .title3{
-	margin-right: 100px;
-	margin-bottom: 10px;
-	color:#979797
+	margin-right: 13%;
+	color:#979797;
+	padding-bottom: 30px;
   }
   .main ul{
 	display: flex;
-	justify-content: space-around;
-	margin-top :2.5rem;
-	margin-left: 2rem;
+	justify-content: space-between;
+	margin: 5%;
+  }
+  .main ul li{
+	padding-left: 3%;
   }
   .main ul li h3{
-	margin: 20px 45px;
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-bottom: 5%;
+	width: 100%;
 	font-family: MicrosoftJhengHeiRegular;
 font-size: 18px;
 color: #3D1101;
   }
   .main ul li p{
-	width: 260px;
-	height: 105px;
 	line-height: 1.2rem;
-	margin-left: 3px;
+	width: 100%;
 	font-family: MicrosoftJhengHeiRegular;
 font-size: 16px;
 color: #3D1101;
   }
+  .introduce{
+	display: flex;
+	background-color: #3D1101;
+	width: 100%;
+  }
+  .introduce img{
+	width: 470px;
+	margin-left: 5%;
+	margin-right: 3%;
+  }
+  .introduce section h4{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 20px;
+color: #EFE9E7;
+line-height: 32px;
+margin-top: 81px;
+  }
+  .introduce section p{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: #EFE9E7;
+margin-top: 30px;
+width: 85%;
+height: 231px;
+  }
   @media(max-width:768px){
+	.main ul li h3{
+		width: 100%;
+	}
 	.main ul li p{
-		width: 196px;
-		height: 147px;
+		width: 100%;
+	}
+	
+	.introduce img{
+		width: 373px;
+	}
+	.introduce section p{
+		height: 294px;
 	}
   }
   @media(max-width:375px){
 	.title1,.title3{
 		display: none;
 	}
+	.main ul{
+		flex-direction: column;
+		margin-left: 20%;	
+	}
+	.main ul li{
+		margin-top: 20%;
+	}
+	.main ul li p{
+		width: 240px;
+		height: 105px;
+	}
+	.introduce{
+		width: 100%;
+		height: 987px;
+		flex-direction: column;
+	}
+	.introduce img{
+		margin-left: 0;
+	}
+	.introduce section{
+		margin: 0 auto;
+	}
+	.introduce section p{
+		width: 260px;
+		height: 399px;
+		line-height: 1.3rem;
+	}
   }
+/* main end */
+.content{
+	margin-top: 50px;
+}
+.content h4{
+	text-align: center;
+	font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    color: #3D1101;
+	margin-bottom: 30px;
+}
+.impression{
+	display: flex;
+}
+.figure{
+	
+	display: flex;
+	justify-content: space-between;
+}
+.figure img{
+	border-radius: 99%;
+	width: 67px;
+	height: 67px;
+	margin-left: 42px;
+}
+.figure h5{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 18px;
+color: #3D1101;
+margin: 30px 0 25px 13px ;
+}
+.figure p{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: #3D1101;
+line-height: 24px;
+margin-left: 13px;
+margin-bottom: 30px;
+}
+.figure span{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: rgba(61,17,0,0.75);
+line-height: 24px;
+margin-left: 60%;
+}
+@media(max-width:768px){
+	.content{
+		width: 100%;
+	}
+	.figure img{
+		margin-left: 0;
+	}
+	.figure p{
+		width: 80%;
+		height: 144px;
+	}
+	.figure span{
+		margin-left: 50%;
+	}
+}
