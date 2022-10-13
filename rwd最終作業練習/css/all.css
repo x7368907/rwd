@@ -385,24 +385,58 @@ margin-left: 60%;
 font-size: 24px;
 color: #3D1101;
 }
-.address .information{
-	display: flex;
+.address{
 	margin-top: 40px;
 	
 }
 .information{
-	width: 100%;
+	display: flex;
+	margin-top: 30px;
 }
 .information img{
-	width: 50%;
-	height: auto;
+	width: 47%;
+	height: 386px;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 .information input{
 	margin-bottom: 20px;
 	margin-top: 5px;
 }
 .information .text{
-	width: 250%;
+	width: 260%;
 	height: 32px;
+}
+.button{
+	white-space: nowrap;
+	margin-top: 5%;
+	margin-left:180%;
+}
+.button1{
+	width: 60px;
+	height: 30px;
+	background-color: gray;
+	color: #fff;
+	cursor: pointer;
+}
+.button2{
+	width: 60px;
+	height: 30px;
+	background-color: orange;
+	color: #fff;
+	cursor: pointer;
+}
+@media(max-width:768px){
+ .information img{
+	width: 50%;
+ }
+ .information .text{
+	width: 200%;
+ }
+ .button{
+	margin-left: 120%;
+ }
+}
+@media(max-width:375px){
 	
 }
