@@ -438,5 +438,29 @@ color: #3D1101;
  }
 }
 @media(max-width:375px){
+	.information{
+		flex-direction: column;
+	}
+	.information img{
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+	}
+	.information label{
+		margin-left: 5%;
+	}
 	
+	.information .text{
+		width: 90%;
+		margin-left: 5%;
+
+	}
+	.button{
+		margin-left: 60%;
+	}
+}
+/* address end */
+.footer{
+	display: flex;
+	justify-content: space-around;
 }
