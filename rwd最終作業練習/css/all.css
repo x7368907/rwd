@@ -360,11 +360,12 @@ margin-left: 60%;
 		margin-left: 0;
 	}
 	.figure p{
-		width: 80%;
-		height: 144px;
+		width: 70%;
 	}
 	.figure span{
-		margin-left: 50%;
+		display: block;
+		margin-left: 40%;
+		white-space: nowrap;
 	}
 }
 @media(max-width:375px){
@@ -404,13 +405,13 @@ color: #3D1101;
 	margin-top: 5px;
 }
 .information .text{
-	width: 260%;
+	width: 250%;
 	height: 32px;
 }
 .button{
 	white-space: nowrap;
 	margin-top: 5%;
-	margin-left:180%;
+	margin-left:170%;
 }
 .button1{
 	width: 60px;
@@ -462,5 +463,45 @@ color: #3D1101;
 /* address end */
 .footer{
 	display: flex;
-	justify-content: space-around;
+}
+.footer main{
+	flex: 2 1 300px;
+	margin-left: 5%;
+}
+.footer main h3{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 24px;
+color: #3D1101;
+margin-top: 50px;
+margin-bottom: 16px;
+}
+.footer main p{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: #3D1101;
+width: 90%;
+}
+.footer section{
+	flex: 2 1 300px;
+}
+.footer section h4{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 24px;
+color: #3D1101;
+margin-top: 50px;
+margin-bottom: 16px;
+}
+.footer section ul{
+	list-style-type:disc;
+}
+.footer section ul li a{
+	display: block;
+	text-decoration: none;
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: #3D1101;
+margin-bottom: 5px;
+}
+.footer footer{
+	flex: 1 1 300px;
 }
