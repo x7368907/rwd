@@ -419,12 +419,14 @@ color: #3D1101;
 	background-color: gray;
 	color: #fff;
 	cursor: pointer;
+	border: none;
 }
 .button2{
 	width: 60px;
 	height: 30px;
 	background-color: orange;
 	color: #fff;
+	border: none;
 	cursor: pointer;
 }
 @media(max-width:768px){
@@ -463,9 +465,11 @@ color: #3D1101;
 /* address end */
 .footer{
 	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+
 }
 .footer main{
-	flex: 2 1 300px;
 	margin-left: 5%;
 }
 .footer main h3{
@@ -479,10 +483,10 @@ margin-bottom: 16px;
 	font-family: MicrosoftJhengHeiRegular;
 font-size: 16px;
 color: #3D1101;
-width: 90%;
+width:85%;
 }
 .footer section{
-	flex: 2 1 300px;
+	margin-right:10%;
 }
 .footer section h4{
 	font-family: MicrosoftJhengHeiRegular;
@@ -503,5 +507,44 @@ color: #3D1101;
 margin-bottom: 5px;
 }
 .footer footer{
-	flex: 1 1 300px;
+	margin-right: 10%;
+
+}
+.footer footer img{
+	width: 45vw;
+	height: 48px;
+	margin-top: 20%;
+}
+.link{
+
+	display: flex;
+	justify-content:flex-end;
+	margin-top: 15px;
+}
+.link li{
+	margin-left: 5%;
+}
+.link li a img{
+	width: 3vw;
+	height: 3vw;	
+}
+@media(max-width:768px){
+	.footer footer{
+		margin-top: 25px;
+	}
+}
+@media(max-width:375px){
+	.footer{
+		flex-direction: column;
+	}
+	.footer section{
+		margin-left: 7%;
+	}
+	.footer footer img{
+		margin-left: 50%;
+	}
+	.link li a img{
+		width: 5vw;
+		height: 5vw;
+	}
 }
