@@ -548,3 +548,45 @@ margin-bottom: 5px;
 		height: 5vw;
 	}
 }
+/* cart.html start */
+.cart{
+	display: flex;
+	width: 100%;
+}
+.sidebar{
+	width: 30%;
+}
+.sidebar h3{
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 20px;
+color: #3D1101;
+line-height: 32px;
+}
+.sidebar a{
+	display: block;
+	text-decoration: none;
+	font-family: MicrosoftJhengHeiRegular;
+font-size: 16px;
+color: #3D1101;
+line-height: 32px;
+border-bottom:1px solid #3D1101 ;
+}
+
+
+
+
+main{
+	width: 70%;
+}
+.searchbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.searchbar ul{
+	display: flex;
+}
+.searchbar ul li a{
+	display: block;
+	text-decoration: none;
+}
