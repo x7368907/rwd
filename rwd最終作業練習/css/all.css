@@ -859,3 +859,77 @@ main{
 		right: 65%;
 	}
 }
+/* loginend */
+.register{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.register img{
+	width: 20%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+.register h4{
+	font-family: NotoSansCJKtc-Medium;
+    font-size: 20px;
+    color: #3D1101;
+	margin-bottom: 3%;
+}
+.signup{
+	width: 60%;
+	border-top: 2px solid #FF5E45;
+	border-right: 1px solid #FF5E45;
+	border-bottom: 1px solid #FF5E45;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.signup h3{
+    font-size: 18px;
+    color: #3D1101;
+	font-weight: 900;
+	margin-bottom: 5%;
+	margin-top: 3%;
+} 
+.signin{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.signin p{
+    font-size: 18px;
+    color: #3D1101;
+	line-height: 1.5rem;
+	width: 50%;
+}
+.signin form{
+	width: 45%;
+	margin-left: 5%;
+}
+.signin label{
+	font-size: 16px;
+    color: #3D1101;
+}
+.signin input{
+	margin: 2% 0%;
+	width: 80%;
+	font-size: 1rem;
+}
+.account{
+	display: block;
+	text-decoration: none;
+    font-size: 14px;
+    color: #FF5E45;
+}
+.button5{
+	color: #fff;
+	background-color: #FF5E45;
+	border: none;
+	padding: 0.25rem 2.5rem;
+	cursor: pointer;
+	margin-left: 63%;
+	margin-bottom: 5%;
+}
