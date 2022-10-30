@@ -178,7 +178,7 @@ padding: 1.2rem;
 		width: 90%;
 	  }
 	  .header section h2{
-		text-indent: 150px;
+		text-indent: 20px;
 	  }
 
 }
@@ -607,23 +607,22 @@ main{
 	align-items: center;
 	margin-bottom: 30px;
 }
-.searchbar form{
-	border: 1px solid #3D1101;
-	background-color: #FFFFFF;
-}
+
 .searchbar input{
-	width: 37vw;
 	height: 32px;
+	width: 37vw;
 	border: 1px solid #3D1101;
-	border: none;
+	position: relative;
 	
 }
-.searchbar button{
-	padding: 8.5px;
+.search{
+	display: block;
 	background-color: #3D1101;
-	color: #FFFFFF;
-	cursor: pointer;
-	border: none;
+	padding: 8px;
+	color: #FFFF;
+	position: absolute;
+	top: 63.5%;
+	right: 32%;
 }
 .searchbar ul{
 	display: flex;
@@ -643,6 +642,7 @@ main{
 }
 .list ul{
 	display: flex;
+	margin-left: 3%;
 	flex-wrap: wrap;
 	
 }
@@ -729,11 +729,133 @@ main{
 		margin-left: 5%;
 	}
 	.searchbar input{
-		width: 70vw;
+		width: 75vw;
+	}
+	.search{
+		top:93.5%;
+		right: 16%;
 	}
 	.searchbar ul{
 		margin-top: 5%;
 		margin-left: 60%;
 	}
-	
+	.list ul {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.list ul li{
+		width: 100%;
+		height: 120px;
+		margin-bottom: 70%;
+
+	}
+	.fries{
+		margin-top: 0%;
+	}
+}
+/* cart end */
+.login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.login img{
+	width: 20%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+.login h4{
+	font-family: NotoSansCJKtc-Medium;
+    font-size: 20px;
+    color: #3D1101;
+	margin-bottom: 3%;
+}
+.login form{
+	width: 30%;
+	border-top: 2px solid #FF5E45;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	box-shadow: 1px 1px 1px;
+}
+.login form h3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-size: 18px;
+    color: #3D1101;
+	font-weight: 900;
+	margin: 5% 0%;
+}
+.login form label,input{
+	margin-left: 5%;
+}
+.login form label{
+    color: #3D1101;
+}
+.login form input{
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	border: none;
+	position: relative;
+}
+.mail{
+	display: block;
+	position: absolute;
+	right: 58%;
+	top:88.5%;
+	z-index: 1;
+	color: gray;
+}
+.lock{
+	display: block;
+	position: absolute;
+	right: 58%;
+	top:97.5%;
+	z-index: 1;
+	color: gray;
+}
+.lose{
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+    color: #FF5E45;
+	margin-left: 5%;
+	margin-bottom: 10%;
+}
+.loginup{
+	margin-bottom: 10%;
+}
+.button3{
+	border: none;
+	color:#fff;
+	background-color: gray;
+	width: 40%;
+	padding:0.25rem 0rem;
+	cursor: pointer;
+	margin-left: 5%;
+}
+.button4{
+	border: none;
+	color:#fff;
+	background-color:#FF5E45;
+	padding: 0.25rem 0rem;
+	width: 40%;
+	cursor: pointer;
+}
+@media(max-width:375px){
+	.login form{
+		width: 50%;
+	}
+	.mail{
+		top:79.5%;
+		right: 65%;
+	}
+	.lock{
+		top:89.5%;
+		right: 65%;
+	}
 }
